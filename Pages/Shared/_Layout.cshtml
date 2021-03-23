@@ -53,7 +53,6 @@
     <div id="page-wrapper">
         <!-- Preloader -->
         <!-- Preloader functionality (initialized in ~/js/app.js) - pageLoading() -->
-        <!-- Used only if page preloader is enabled from inc/config (PHP version) or the class 'page-loading' is added in #page-wrapper element (HTML version) -->
         <div class="preloader themed-background">
             <h1 class="push-top-bottom text-light text-center"><strong>Pro</strong>UI</h1>
             <div class="inner">
@@ -63,7 +62,7 @@
         </div>
         <!-- END Preloader -->
         <!-- Page Container -->
-     
+  
         <div id="page-container" class="sidebar-partial sidebar-visible-lg sidebar-no-animations">
             <!-- Alternative Sidebar -->
             <div id="sidebar-alt">
@@ -247,7 +246,7 @@
                     <div class="sidebar-content">
                         <!-- Brand -->
                         <a href="index.html" class="sidebar-brand">
-                            <i class="gi gi-flash"></i><span class="sidebar-nav-mini-hide"><strong>Pro</strong>UI</span>
+                            <i class="gi gi-flash"></i><span class="sidebar-nav-mini-hide"><strong>OS</strong>SLN</span>
                         </a>
                         <!-- END Brand -->
                         <!-- User Info -->
@@ -267,14 +266,6 @@
                             </div>
                         </div>
                         <!-- END User Info -->
-                        <!-- Theme Colors -->
-                        <!-- Change Color Theme functionality can be found in ~/js/app.js - templateOptions() -->
-                        <ul class="sidebar-section sidebar-themes clearfix sidebar-nav-mini-hide">
-                            <li class="active">
-                                <a href="javascript:void(0)" class="themed-background-dark-default themed-border-default" data-theme="default" data-toggle="tooltip" title="Default Blue"></a>
-                            </li>
-                        </ul>
-                        <!-- END Theme Colors -->
                         <!-- Sidebar Navigation -->
                         <ul class="sidebar-nav">
                             <li class="active">
@@ -434,9 +425,10 @@
                                 </li>
                                 <li class="divider"></li>
                                 <li>
-                                    <a href="page_ready_lock_screen.html"><i class="fa fa-lock fa-fw pull-right"></i> Lock Account</a>
-                                    <a href="login.html"><i class="fa fa-ban fa-fw pull-right"></i> Logout</a>
+                                <a href="page_ready_lock_screen.html"><i class="fa fa-lock fa-fw pull-right"></i> Lock Account</a>
                                 </li>
+                                <li>
+                                <a asp-controller="Core" asp-action="Logout"><i class="fa fa-ban fa-fw pull-right"></i> Logout</a></li>
                                 <li class="dropdown-header text-center">Activity</li>
                                 <li>
                                     <div class="alert alert-success alert-alt">
